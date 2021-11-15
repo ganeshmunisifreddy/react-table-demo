@@ -1,0 +1,37 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #cccccc5c;
+  text-align: left;
+}
+
+td,
+th {
+  border: 1px solid #cccccc5c;
+  padding: 6px 12px;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+table tbody tr:hover {
+  background-color: #c4dcff;
+}
+
+table .header-row {
+  background-color: #e5d9c4;
+}
+
+.col-header-cell {
+  display: flex;
+  cursor: pointer;
+}
+
+.col-header-cell > .order-by-icon {
+  opacity: 0;
+}
+
+.col-header-cell:hover > .order-by-icon {
+  opacity: 1;
+}
